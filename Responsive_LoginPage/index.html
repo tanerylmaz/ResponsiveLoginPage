@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" id="btn-logcolor"  class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" id="btn-regcolor" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <dotlottie-player src="https://lottie.host/22c2a345-fd73-4bc7-8e7d-513aee79a04e/meHfhES0sI.json" background="transparent" speed="1"  direction="1" mode="normal" loop autoplay></dotlottie-player>
+                <dotlottie-player src="https://lottie.host/c3ba7043-2348-4ca9-8ba8-92f17e42b2fb/DyV4t1dEkZ.json" background="transparent" speed="1"  direction="1" mode="normal" loop autoplay></dotlottie-player>
+                <dotlottie-player src="https://lottie.host/97f73a3d-47ff-4a07-a74f-8e677447151b/N6aWgSppA9.json" background="transparent" speed="1"  direction="1" mode="normal" loop autoplay></dotlottie-player>
+                <dotlottie-player src="https://lottie.host/53c02096-3ef1-41f3-9607-13efc79a267c/l6OMJoAH2I.json" background="transparent" speed="1"  direction="1" mode="normal" loop autoplay></dotlottie-player>
+                <dotlottie-player src="https://lottie.host/a00c8235-3d03-4afb-ac43-212b264e9f78/uyvYaqwHyF.json" background="transparent" speed="1"  direction="1" mode="normal" loop autoplay></dotlottie-player>
+            </div>
+            <form id="Login" class="input-group">
+                <input type="text" class="input-field" placeholder="Enter Username" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <a href="#">Lost Your Password</a>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+
+            <form id="Register" class="input-group">
+                <input type="text" class="input-field" placeholder="Enter Username" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="email" class="input-field" placeholder="Enter Email" required>
+                <a href="#">By registering, you agree to the Terms, Data Policy and Cookies Policy.</a>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script>
+        var x=document.getElementById("Login");
+        var z=document.getElementById("Register");
+        var y=document.getElementById("btn");
+        var h=document.getElementById("btn-regcolor");
+        var g=document.getElementById("btn-logcolor");
+
+        function register() {
+            x.style.left="-400px";
+            z.style.left="50px";
+            y.style.left="110px";
+            h.style.color="white";
+            g.style.color="black";
+        }
+        function login() {
+            x.style.left="50px";
+            z.style.left="450px";
+            y.style.left="0px";
+            h.style.color="black";
+            g.style.color="white";
+        }
+
+
+    </script>
+
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+
+</body>
+</html>
